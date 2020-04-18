@@ -13,6 +13,7 @@ app.colors = {'background': '#5F5958'}
 external_stylesheets = ['https://codepen.io/mtfaye/pen/MWgpoyp.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
+
 app.layout = html.Div(
     [
         html.Div(
@@ -42,7 +43,6 @@ app.layout = html.Div(
         ], className="row")
     ], className='ten columns offset-by-one'
 )
-
 
 
 if __name__ == '__main__':
