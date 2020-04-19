@@ -23,7 +23,7 @@ Created the web app using the framework [Dash](https://plotly.com/dash/).
 		├── .gitignore
 		├── README.md
 		│  
-		├── assests   # Contains the Boostrap stylesheet file
+		├── assests   # Contains the Boostrap Stylesheet file
 		│  
 		├── imgs   # Contains images, screenshots...
 		│  
@@ -31,11 +31,11 @@ Created the web app using the framework [Dash](https://plotly.com/dash/).
 		│   
 		├──__init__.py    
 		│   
-		├── app.py   # main module for dash codes front end and managing callbacks
+		├── app.py   # main module for dash codes front end and callbacks management
 		│   
-		├── utils.py  # Utility Functions like data collection, set conditions for failures cases
+		├── utils.py  # Utility Functions: data collection, set conditions for failures cases
 		│  
-		├── model.pu  # connect the utilitis and the conditions loop for sending alert 
+		├── model.pu  # connect the utilities and the loop conditions
 
 
 ## Prerequisites
