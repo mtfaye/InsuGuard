@@ -17,6 +17,25 @@ Created the web app using the framework [Dash](https://plotly.com/dash/).
 
 ![App](imgs/app.png)
 
+## Repo content 
+
+	├── .gitignore
+	├── README.md
+	│  
+	├── assests   # Contains the Boostrap stylesheet file
+	│  
+	├── imgs   # Contains images, screenshots...
+	│  
+	├── patient-data   # Contains the dataset
+	│   
+        ├──__init__.py
+	│   
+        ├── app.py   # main module for dash codes front end and managing callbacks
+	│   
+	├── utils.py  # Utility Functions like data collection, set conditions for failures cases
+	│  
+        ├── model.pu  # connect the utilitis and the conditions loop for sending alert 
+
 
 ## Prerequisites
 
@@ -42,6 +61,12 @@ From comnand line:
 4. Run the app now.
 		
 	     $ python3 app.py
+	     
+	     
+	  
+	  
+## Enjoy! 
+	 
 
 
 
