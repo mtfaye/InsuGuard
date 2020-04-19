@@ -47,9 +47,9 @@ Make sure to have [pip](https://pip.pypa.io/en/stable/) and [Python3+](https://w
 
 From comnand line:
 
-1. Clone repo  ``` $ git clone https://github.com/mtfaye/InsuGard.git ```
+1. Clone repo  ``` $ git clone https://github.com/mtfaye/InsuGuard.git ```
 
-2. Change directory ``` $ cd /inside the cloned directory ```
+2. Change directory ``` $ cd InsuGuard/ ```
 
 3. Create a virtual environment venv, activate it and install the necessary dependencies.
 		
