@@ -43,9 +43,15 @@ Code Descriptions
 """
 
 
-def treshold():
-    """ Graphs """
+def treshold_insuline():
+    """ Set treshold values for Insuline dose """
     pass
+
+
+def treshold_glucose():
+    """ Set treshold values for glucose measurement """
+    pass
+
 
 
 def notifications():
