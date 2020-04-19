@@ -1,7 +1,8 @@
-# Insuline Tracker App
+# Hackathon Together vs The Virus Covid19 - Insuline Tracker App
 
 This alpha version of the app collects data from 70 diabetes patient throughout a year using an automatic electronic recording device connected to the patients. The app monitor the fluctuation of glucose, insuline levels and also dose injection. Whenever the app stop receiving data from a single patient it raises an alert and notify the medical staff for an immediate assistance.
 
+# By team: 
 ![Logo](imgs/logo_2.png)
 
 
