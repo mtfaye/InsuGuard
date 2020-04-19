@@ -1,6 +1,7 @@
 # Insuline Tracker App
-This alpha version of the app collects data from 70 diabetes patient throughout a year using an automatic electronic recording device connected to the patients. The app monitor the fluctuation of glucose, insuline levels and also dose injection. Whenever the app stop receiving data from a single patient it raises an alert and notify the medical staff for an immediate assistance.
 
+This alpha version of the app collects data from 70 diabetes patient throughout a year using an automatic electronic recording device connected to the patients. The app monitor the fluctuation of glucose, insuline levels and also dose injection. Whenever the app stop receiving data from a single patient it raises an alert and notify the medical staff for an immediate assistance.
+![Logo](imgs/logo.png)
 ## Workflow
 
 
@@ -10,7 +11,7 @@ See source: http://archive.ics.uci.edu/ml/datasets/diabetes
 #### 	4. App Creation:
 Created the web app using the framework [Dash](https://plotly.com/dash/). 
 
-![Words Cloud](src/assets/screenshot_app.png)
+![App](imgs/app.png)
 
 
 ## Prerequisites
@@ -37,6 +38,7 @@ From comnand line:
 4. Run the app now.
 		
 	     $ python3 app.py
+
 
 
 
