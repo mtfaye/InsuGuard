@@ -15,7 +15,7 @@ def dict_main():
 
 
 dict_main = dict_main()
-
+print(dict_main['data-70'])
 
 def treshold_insuline():
     """ Set treshold values for Insuline dose """

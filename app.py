@@ -2,13 +2,14 @@ import dash
 import dash_html_components as html
 import dash_core_components as dcc
 import plotly.graph_objs as go
+import dash_bootstrap_components as dbc
 from utils import dict_main
 
 data = list(dict_main.keys())
 channels = dict_main[data[0]]
 
 app = dash.Dash(__name__)
-app.title = 'Diabetes Monitoring App'
+app.title = 'InsuGuard App'
 app.colors = {'background': '#5F5958'}
 
 # Boostrap CSS
@@ -27,14 +28,33 @@ app.layout = html.Div(
         ),
         html.Div([
             html.Div(html.H5(
-                children=""" About: """
+                children=""" About the app: """
             )
                 , style={'textAlign': 'left'}),
             html.P(
-                """ Insulin Game Changer  """
-            )
+                """This alpha version of the app collects data from 70 diabetes patient throughout a year using an 
+                automatic electronic recording device connected to the patients. The app monitor the fluctuation of 
+                glucose, insuline levels and also dose injection. Whenever the app stop receiving data from a 
+                single patient it raises an alert and notify the medical staff for an immediate assistance. """
+            ),
+            html.Div([
+
+        dbc.ListGroupItem("33 = Regular insulin dose"),
+        dbc.ListGroupItem("65 = Hypoglycemic symptoms"),
+        dbc.ListGroupItem("35 = UltraLente insulin dose"),
+        dbc.ListGroupItem("72 = Unspecified special event"),
+            ])
+
         ]),
         html.Div(children=[
+            html.Div(
+                [
+                    dbc.Button("Warning", color="Red", outline=True, size="lg", className="mr-1"),
+                    dbc.Button("Danger", color="Yellow", outline=True, size="lg", className="mr-1"),
+                    dbc.Button("Info", color="info", outline=True, size="lg", className="mr-1")
+                ]
+            )
+            ,
             html.Div([
                 dcc.Graph(id='Main-Graph',
                           figure=go.Figure(
@@ -61,15 +81,16 @@ app.layout = html.Div(
             ]),
             html.Div(
                 [
-                    html.P('Developed by Team Insuline Game Changer ',
+                    html.P('Developed by: ',
                            style={'display': 'inline'}),
-                    html.A('tahafaye@hotmail.com', href='mailto: tahafaye@hotmail.com')
+                    html.A('InsuGuard', href='mailto: InsuGuard')
                 ], className="twelve columns",
                 style={'fontSize': 14, 'padding-top': 18}
             )
         ], className="row")
     ], className='ten columns offset-by-one'
 )
+
 
 @app.callback(
     dash.dependencies.Output('Main-Graph', 'figure'),
@@ -101,7 +122,6 @@ def update_date_dropdown(selected):
         return dict_main['data-01']
     fields = [{'label': i, 'value': i} for i in dict_main[selected]]
     return [fields, fields]
-
 
 
 if __name__ == '__main__':
