@@ -14,7 +14,7 @@ This alpha version of the app collects data from 70 diabetes patient throughout 
 See source: http://archive.ics.uci.edu/ml/datasets/diabetes
 
 #### 	 App Creation:
-Created the web app using the framework [Dash](https://plotly.com/dash/). 
+Prototype created using the framework [Dash](https://plotly.com/dash/). 
 
 ![App](imgs/app.png)
 
