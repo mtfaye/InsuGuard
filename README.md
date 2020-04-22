@@ -16,7 +16,7 @@ See source: http://archive.ics.uci.edu/ml/datasets/diabetes
 #### 	 App Creation:
 Prototype created using the framework [Dash](https://plotly.com/dash/). 
 
-![App](imgs/app.png)
+![App](imgs/ui.png)
 
 ## Repo content 
 
